@@ -1,0 +1,13 @@
+#!/bin/bash
+# Simple task automated and silly script formatted by Jake
+echo -e "\e[92mAptitude Updater, cause life is too short for this shit!"
+echo -e "\e[7mBrought to you by Jake & Caffeine!\e[27m"
+echo -e "\e[96m+++ Hitting Repositories..."
+apt-get update
+echo -e "\e[96m+++ Grabbing New Packages..."
+apt-get upgrade -y
+echo -e "\e[96m+++ Checking for Distro Upgrades..."
+apt-get dist-upgrade -y
+echo -e "\e[96m+++ Taking out the trash..."
+apt-get autoremove -y
+echo -e "\e[92m All done! Now do something productive! ;)"
