@@ -3,13 +3,13 @@
 echo -e "\e[92mAptitude Updater, cause life is too short for this shit!"
 echo -e "\e[7mBrought to you by Jake & Caffeine!\e[27m"
 echo -e "\e[96m+++ Hitting Repositories...\e[35m"
-#apt-get update
+sudo apt-get update
 echo -e "\e[96m+++ Grabbing New Packages...\e[35m"
-#apt-get upgrade -y
+sudo apt-get upgrade -y
 echo -e "\e[96m+++ Checking for Distro Upgrades...\e[35m"
-#apt-get dist-upgrade -y
+sudo apt-get dist-upgrade -y
 echo -e "\e[96m+++ Taking out the trash...\e[35m"
-#apt-get autoremove -y
+sudo apt-get autoremove -y
 echo -e "\e[92m All done! Now do something productive! ;)\e[0m"
 
 # Aptitude Motivator
