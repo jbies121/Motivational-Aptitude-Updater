@@ -1,5 +1,6 @@
 #!/bin/bash
 # Simple task automated and silly script formatted by Jake
+
 echo -e "\e[92mAptitude Updater, cause life is too short for this shit!"
 echo -e "\e[7mBrought to you by Jake & Caffeine!\e[27m"
 echo -e "\e[96m+++ Hitting Repositories...\e[35m"
