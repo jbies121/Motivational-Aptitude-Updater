@@ -1,6 +1,21 @@
 #!/bin/bash
 # Simple task automated and silly script formatted by Jake
 
+# ~~~~.bashrc changer~~~~
+# Optional bashrc file made by helmuthdu. One of my favorites. Uncomment to win
+#==============================================================================
+#current=`md5sum ~/.bashrc | cut -d' ' -f1`
+#new='4923a24ef5cc07925f66bb2cd3e512d7'
+#if [ $current = $new  ]; then
+#	:
+#else
+#	rm ~/.bashrc
+#	wget https://raw.githubusercontent.com/helmuthdu/dotfiles/master/.bashrc -O ~/.bashrc
+#	source ~/.bashrc
+#fi
+#==============================================================================
+
+# Updater
 echo -e "\e[92mAptitude Updater, cause life is too short for this shit!"
 echo -e "\e[7mBrought to you by Jake & Caffeine!\e[27m"
 echo -e "\e[96m+++ Hitting Repositories...\e[35m"
@@ -13,6 +28,6 @@ echo -e "\e[96m+++ Taking out the trash...\e[35m"
 sudo apt-get autoremove -y
 echo -e "\e[92m All done! Now do something productive! ;)\e[0m"
 
-# Aptitude Motivator
-FILE=quotes.txt
-shuf -n 1 $FILE
+# Motivator
+LOC="$(sudo locate quotesMAU05.txt)"
+shuf -n 1 $LOC
