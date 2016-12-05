@@ -22,6 +22,8 @@ echo -e "\e[96m+++ Hitting Repositories...\e[35m"
 sudo apt-get update
 echo -e "\e[96m+++ Grabbing New Packages...\e[35m"
 sudo apt-get upgrade -y
+echo -e "\e[96m+++ Installing locate, cause c'mon, you better have it.\e[35m"
+sudo apt-get install locate -y
 echo -e "\e[96m+++ Checking for Distro Upgrades...\e[35m"
 sudo apt-get dist-upgrade -y
 echo -e "\e[96m+++ Taking out the trash...\e[35m"
