@@ -31,5 +31,10 @@ sudo apt-get autoremove -y
 echo -e "\e[92m All done! Now do something productive! ;)\e[0m"
 
 # Motivator
-LOC="$(sudo locate quotesMAU05.txt)"
+# Check for Live Persistence
+if [ -e /lib/live/mount/persistence  ]; then
+	LOC="$(sudo locate quotesMAU10.txt | cut -d$'\n' -f2)"
+else
+	LOC="$(sudo locate quotesMAU10.txt)"
+fi
 shuf -n 1 $LOC
