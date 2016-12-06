@@ -1,7 +1,6 @@
 #!/bin/bash
 # Simple task automated and silly script formatted by Jake
-
-# ~~~~.bashrc changer~~~~
+#~~~~~.bashrc changer~~~~
 # Optional bashrc file made by helmuthdu. One of my favorites. Uncomment to win
 #==============================================================================
 #current=`md5sum ~/.bashrc | cut -d' ' -f1`
@@ -33,8 +32,12 @@ echo -e "\e[92m All done! Now do something productive! ;)\e[0m"
 # Motivator
 # Check for Live Persistence
 if [ -e /lib/live/mount/persistence  ]; then
+	MAU="$(locate Motivational-Aptitude-Updater/updater | cut -d$'\n' -f2)"
+	export PATH=$MAU:$PATH
 	LOC="$(sudo locate quotesMAU10.txt | cut -d$'\n' -f2)"
 else
-	LOC="$(sudo locate quotesMAU10.txt)"
+	MAU="$(locate Motivational-Aptitude-Updater/updater | cut -d$'\n' -f1)"
+	export PATH=$MAU:$PATH
+	LOC="$(sudo locate quotesMAU10.txt | cut -d$'\n' -f1)"
 fi
 shuf -n 1 $LOC
