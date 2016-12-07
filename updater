@@ -1,5 +1,7 @@
 #!/bin/bash
 # Simple task automated and silly script formatted by Jake
+set -e
+set -o pipefail
 #~~~~~.bashrc changer~~~~
 # Optional bashrc file made by helmuthdu. One of my favorites. Uncomment to win
 #==============================================================================
