@@ -31,7 +31,7 @@ sudo apt-get dist-upgrade -y
 echo -e "\e[96m+++ Taking out the trash...\e[35m"
 sudo apt-get autoremove -y
 echo -e "\e[96m+++ UpdateDB...\e[35m"
-updatedb
+sudo updatedb
 echo -e "\e[92m All done! Now do something productive! ;)\e[0m"
 
 # Motivator
