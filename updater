@@ -19,7 +19,8 @@ set -o pipefail
 
 # Updater
 echo -e "\e[92mAptitude Updater, cause life is too short for this shit!"
-echo -e "\e[7mBrought to you by Jake & Caffeine!\e[27m"
+echo -e "\e[7m[+] Version 20170523\e[27m"
+echo -e "\e[92mBrought to you by Jake & Caffeine!\e[35m"
 echo -e "\e[96m+++ Hitting Repositories...\e[35m"
 sudo apt-get update
 echo -e "\e[96m+++ Grabbing New Packages...\e[35m"
